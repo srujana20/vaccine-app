@@ -1,4 +1,4 @@
-#Vaccine App#
+# Vaccine App
 
 With the world fighting the pandemic, it has become a manadate for everyone to get vaccinated to protect themselves. It has also become one major concern as to what measures and approaches to be followed to vaccinate people. To ease the problem, and understand the availability of vaccines near to our neighbourhood, I have come up with an approach to list down all the people according to their nearest vaccination centres.
 
@@ -8,10 +8,10 @@ The app collates the population concentrated in a city and the vaccination centr
 
 **Output**: The list of people mapped to vaccination centres based on their location(nearest to vaccination centre) and prioritised by their age.
 
-####Input and Output####
+#### Input and Output
 
 
-####Test Input:
+#### Test Input:
 
 **People.txt**
 
@@ -31,7 +31,7 @@ City Hall Cork, 51.89742637092438, -8.465763459121026
 Convention Centre Dublin, 53.28603418885669,-6.444447772580228
 ```
 
-####Expected Output:
+#### Expected Output:
 
 ```
   "Galway Racecourse" : [ {
@@ -59,7 +59,7 @@ Design Approach
 
 I wanted to implement my code in a clean and intuitive way, hence I have chosen to add clear comments to my code, and opted to name my tests, methods and variables in an intuitive way that anybody can follow.
 
-####Workflow####
+#### Workflow
 
 * Reads config.properties from classpath
 * Fetches the files names of population data and vaccination centres info files.
@@ -69,7 +69,7 @@ I wanted to implement my code in a clean and intuitive way, hence I have chosen 
 * Data grouping is done based on the distance between person's location to the vaccination centres. The nearest vaccination centre is chosen and mapped to the person.
 * Print the results
 
-####Classes####
+#### Classes
 
 * **Config.java** : Reads config File and loads config into the application.
      - **getProperty()** : Fetches the value corresponding to the key from config.
@@ -90,7 +90,7 @@ I wanted to implement my code in a clean and intuitive way, hence I have chosen 
      - **degreeToRadian()**: converts degrees to radians
 * **VaccinationApplication**: Main class to start vaccine application
 
-####Assumptions####
+#### Assumption
 
 - Considered people of age below 150
 - The data files are places in class path
